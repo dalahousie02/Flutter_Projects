@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 
-
 void main() {
   runApp(const InfoApp());
 }
@@ -171,50 +170,50 @@ class ContactPage extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: SingleChildScrollView(
           child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Text(
-                  "We'd love to hear from you! Whether you have a question, feedback, or just want to say hello, please don't hesitate to reach out.",
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-                ),
-                const SizedBox(height: 24),
-                const Text('Contact Information', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
-                const SizedBox(height: 12),
-                _buildContactRow('Email', 'support@example.com'),
-                // _buildContactRow('',''), uncomment For a gap
-                _buildContactRow('Phone', '+1 (555) 123-4567'),
-                // _buildContactRow('',''),uncomment for a gap
-                _buildContactRow('Address', '123 Main Street, Anytown, USA'),
-                const SizedBox(height: 24),
-                const Text('Contact Form', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
-                const SizedBox(height: 12),
-                _buildInputField('Your Name'),
-                const SizedBox(height: 12),
-                _buildInputField('Your Email'),
-                const SizedBox(height: 12),
-                _buildInputField('', maxLines: 4),
-                const SizedBox(height: 16),
-                SizedBox(
-                  width: double.infinity,
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
-                      padding: const EdgeInsets.symmetric(vertical: 14),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(6),
-                      ),
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                "We'd love to hear from you! Whether you have a question, feedback, or just want to say hello, please don't hesitate to reach out.",
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+              ),
+              const SizedBox(height: 24),
+              const Text('Contact Information', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+              const SizedBox(height: 12),
+              _buildContactRow('Email', 'support@example.com'),
+              // _buildContactRow('',''), uncomment For a gap
+              _buildContactRow('Phone', '+1 (555) 123-4567'),
+              // _buildContactRow('',''),uncomment for a gap
+              _buildContactRow('Address', '123 Main Street, Anytown, USA'),
+              const SizedBox(height: 24),
+              const Text('Contact Form', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+              const SizedBox(height: 12),
+              _buildInputField('Your Name'),
+              const SizedBox(height: 12),
+              _buildInputField('Your Email'),
+              const SizedBox(height: 12),
+              _buildInputField('', maxLines: 4),
+              const SizedBox(height: 16),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue,
+                    padding: const EdgeInsets.symmetric(vertical: 14),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(6),
                     ),
-                    onPressed: () {},
-                    child: const Text('Send Message', style: TextStyle(color: Colors.white)),
                   ),
+                  onPressed: () {},
+                  child: const Text('Send Message', style: TextStyle(color: Colors.white)),
                 ),
-                const SizedBox(height: 32),
-                const Text('Follow Us', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
-                const SizedBox(height: 16),
-                _buildIconColumn(FontAwesomeIcons.facebookSquare, 'Facebook'),
-                _buildIconColumn(FontAwesomeIcons.twitterSquare, 'Twitter'),
-                _buildIconColumn(FontAwesomeIcons.instagramSquare, 'Instagram'),
-              ]
+              ),
+              const SizedBox(height: 32),
+              const Text('Follow Us', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+              const SizedBox(height: 16),
+               _buildIconColumn(FontAwesomeIcons.facebookSquare, 'Facebook'),
+               _buildIconColumn(FontAwesomeIcons.twitterSquare, 'Twitter'),
+               _buildIconColumn(FontAwesomeIcons.instagramSquare, 'Instagram'),
+            ]
           ),
         ),
       ),
